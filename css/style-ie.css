@@ -1,0 +1,161 @@
+body {
+	font-size: 12px; 
+	line-height: 15px;
+    font-family: Arial, Helvetica, sans-serif;      
+    min-height: 100%;
+    margin: 0px;
+	padding: 10px 0 10px 0;
+	background: #E5E5E5 url('../images/fon.jpg');
+    position: relative;
+	color: #555;
+}
+
+h1 {
+	color: #2F2F2F;
+	font-size: 50px;
+	margin-bottom: 15px;
+	margin-top: 30px;
+}
+
+#head {
+	position: relative;
+	width: 1000px;
+	height: 156px;
+	background: url('../images/2.jpg')no-repeat;
+	color: #7D7D7D;
+	z-index: 2;
+}
+
+.headMenu .inside {
+	height: 23px;
+	padding: 3px;
+	display: block;
+}
+
+.headMenu ul {
+	padding: 0;
+	margin: 7px 0 -1px 0;
+}
+
+.headMenu a:hover {
+	color: #373737;
+	background: none;
+	text-decoration: none;
+	padding: 0px 0px;
+	position: relative;
+}
+
+.headMenu a:hover span {
+	background: white url('../images/pic_25.png') left no-repeat;
+	padding: 0px 8px;
+}
+
+.headMenu a:hover span span {
+	background: white url('../images/pic_28.png') right no-repeat;
+	padding: 4px 8px;
+	margin-right: -8px;
+	margin-left: -8px;
+}
+
+.headMenu {
+	float: left;
+	width: 100%;
+	height: 29px;
+	background: url('../images/pic_20.png');
+	position: relative;
+	bottom: 10px;
+}
+
+.title {
+	float: left;
+	font-size: 24px;
+	margin-top: 5px;
+	position: relative;
+	padding: 4px 0px;
+	margin-top: 0px;
+}
+
+.block {
+	margin-bottom: 10px;
+	padding: 10px;
+	margin-left: -10px;
+}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index: 9000;
+  background-color:#000;
+  display:none;
+  opacity: 0.2;
+  margin-top: -20px;
+  margin-left: -483px;
+  filter: alpha(opacity=80);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:240px;
+  height:150px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+  margin-left: -113px;
+}
+
+#boxes #dialog {
+  width:240px; 
+  height:150px;
+  background-color: none;
+  margin-left: -500px;
+}
+
+.unit-rating li a:hover {
+	background-image: url('../dleimages/rating.png');
+	background-position: left center;
+	z-index: 2;
+	left: 0px;
+	margin-top: 1px;
+	
+}
+
+.title {
+	width: 70%; 
+	float: left; 
+	line-height: 30px; 
+	margin-top: -12px !important;
+}
+
+.jqueryslidemenu{
+font: bold 12px Verdana;
+width: 130px !important;
+margin-right: 20px !important;
+
+}
+
+.jqueryslidemenu ul li a{
+display: block;
+text-align: left;
+width: 130px !important;
+height: 20px;
+backgrou1nd: url('../images/log_user.png'); /*background of tabs (default state)*/
+color: white;
+padding: 4px;
+color: #555;
+text-decoration: none;
+margin-left: -10px !important;
+}
+
+.jqueryslidemenu ul li ul{
+	margin-top: 1px;
+	margin-left: -10px !important;
+}
+
+.jqueryslidemenu ul li ul li a {
+	width: 160px !important;
+	margin-left: 0px !important;
+}

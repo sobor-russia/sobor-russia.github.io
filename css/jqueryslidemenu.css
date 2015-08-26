@@ -1,0 +1,122 @@
+.jqueryslidemenu{
+font: bold 12px Verdana;
+width: 160px;
+float: right;
+}
+
+.jqueryslidemenu ul{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+
+/*Top level list items*/
+.jqueryslidemenu ul li{
+position: relative;
+display: inline;
+float: right;
+}
+
+/*Top level menu link items style*/
+.jqueryslidemenu ul li a{
+display: table-cell;
+text-align: left;
+width: 160px;
+height: 20px;
+background: url(../images/down.gif) right no-repeat; /*background of tabs (default state)*/
+color: white;
+padding: 4px;
+color: #555;
+text-decoration: none;
+}
+
+.jqueryslidemenu ul li a img {
+	margin-top: 1px;
+	marg1in-bottom: -1px;
+	margin-left: -1px;
+	margin-right: 5px;
+	float: left;
+}
+
+.jqueryslidemenu ul li a div {
+	margin-top: 3px;
+	float: left;
+	color: white;
+}
+
+* html .jqueryslidemenu ul li a{ /*IE6 hack to get sub menu links to behave correctly*/
+displa1y: inline-block;
+}
+
+.jqueryslidemenu ul li a:link, .jqueryslidemenu ul li a:visited{
+color: white;
+}
+
+.jqueryslidemenu ul li a:hover{
+backgroun1d: url(../images/log_user_h.png); /*tab link background during hover state*/
+color: white;
+}
+	
+/*1st sub level menu*/
+.jqueryslidemenu ul li ul{
+position: absolute;
+left: 0;
+display: block;
+visibility: hidden;
+z-index: 999999;
+border-bottom: 1px solid gray;
+}
+
+.jqueryslidemenu ul li ul{
+	behavior:expression(onmouseover=function(){this.className +=" zindex"},onmouseout=function() this.className=this.className.replace("zindex","")},style.behavior=null);
+}
+
+.zindex {
+	z-index:1000;
+}
+
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.jqueryslidemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.jqueryslidemenu ul li ul li ul{
+top: 0;
+}
+
+/* Sub level menu links style */
+.jqueryslidemenu ul li ul li a{
+font: normal 11px Verdana;
+border-left: 1px solid gray;
+border-right: 1px solid gray;
+width: 152px; /*width of sub menus*/
+text-align: left;
+display: block;
+padding: 3px;
+height: 15px;
+margin: 0px;
+background: #EEE !important;
+color: #555 !important;
+}
+
+.jqueryslidemenu ul li ul li a:hover{ /*sub menus hover style*/
+background: #F2F2F2 !important;
+color: #45BFF7 !important;
+}
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass{
+position: absolute;
+top: 12px;
+right: 7px;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 6px;
+right: 5px;
+}

@@ -1,0 +1,93 @@
+/*
+=============================================================
+© 2008 Российская школа CSS (Russian CSS School)
+http://www.css-school.ru
+Урок CSS №25. Создание всплывающего окна
+style.css - Набор стилей для урока
+=============================================================
+*/
+
+#wind {
+       position: absolute;
+    width:400px;
+    left: 6%;
+      top: 660px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}
+#win {
+       position: absolute;
+    width:200px;
+    left: 14%;
+      top: 660px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}
+#window {
+       position: absolute;
+    width:200px;
+    left: 14%;
+      top: 660px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}
+#windows {
+       position: absolute;
+    width:150px;
+    left: 10%;
+      top: 250px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}
+#top {
+       position: absolute;
+    width:300px;
+    left: 10%;
+      top: 660px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}
+#mir {
+       position: absolute;
+    width:200px;
+    left: 14%;
+      top: 660px;
+    border:solid #105a98 4px;
+    display: none;
+      z-index: 10;
+    overflow: hidden;
+    background-color:#CCCCCC;
+    color:#fff;
+    text-align:left;
+    padding:10px;
+}

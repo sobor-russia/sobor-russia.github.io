@@ -1,0 +1,818 @@
+/*------------------------------------------------------------------*/
+/* Стили используемые в DataLife Engine     			            */
+/*------------------------------------------------------------------*/
+
+.ui-corner-all
+{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+form {  PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN: 0px; 
+	PADDING-TOP: 0px;
+}
+/* ==================== Информационное оконо загрузки AJAX */
+#loading-layer {
+	display:none;
+	font-family: Verdana;font-size: 11px;
+	background:#000;padding:10px;
+	text-align:center;
+	border:1px solid #000;
+	color: #FFF;
+	border-radius: 5px;
+	-webkit-border-radius: 5px; 
+    -moz-border-radius: 5px;
+}
+/* 
+ * ========================================
+ * Вывод архива 
+ * ========================================
+ */
+.archives {
+	vertical-align: top;
+	font-family:Tahoma;
+	font-size:11px;
+	margin-top:6px;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+.archives a {
+	font-family:Tahoma;
+	font-size:11px;
+	color:#43637E;
+}
+/* 
+ * ========================================
+ * Цитата и скрытый текст
+ * ========================================
+ */
+.title_quote {
+	background: #FEFFBD;
+	border: 1px dotted rgb(190,190,190);
+	border-bottom: 0;
+	color: #222;
+	font-weight: bold;
+	font-size: 10px;
+	margin: 8px auto 0 auto;
+	padding: 3px;
+}
+.title_quote2 {
+	background: white;
+	border: 1px dotted rgb(190,190,190);
+	border-bottom: 0;
+	color: #222;
+	font-weight: bold;
+	font-size: 16px;
+	margin: 5px 5 0 5;
+	padding: 5px;
+}
+
+ .quote {
+	color: white;
+	FONT: 10pt Verdana; 
+	text-align:justify;
+	background-color: lightyellow; 
+	border: 1px dotted rgb(190,190,190);
+	padding: 5px;
+	}
+
+/* ==================== Тег SPOILER */
+
+.title_spoiler {
+	color: #636363;
+	background-color: #f2f2f2;
+	border: 1px dotted #bebebe; 
+	font-weight: bold;
+	padding: 5px;
+}
+.text_spoiler {
+	color: #757575;
+	background-color: #f2f2f2;
+	border: 1px dotted #bebebe;
+	border-top: 0;
+	text-align: justify;
+	padding: 5px;
+}
+
+/* 
+ * ========================================
+ * Teг CODE
+ * ========================================
+ */
+ .scriptcode {
+	color: #000000;
+	FONT: 8pt Verdana; 
+	text-align:left;
+	background-color: lightyellow; 
+	border-width:1; 
+	border-color:rgb(190,190,190); 
+	border-style:dotted;
+	padding: 5px;
+	}
+/* 
+ * ========================================
+ * Календарь 
+ * ========================================
+ */
+
+.weekday-active-v {
+	color: #4974a3;
+	font-family:tahoma;
+	 font-size:11px;
+}
+.day-active-v {
+	color: #4974a3;
+	font-family:tahoma;
+	 font-size:11px;
+}
+.calendar {
+	 font-family:verdana;
+	 font-size:11px
+}
+.calendar td, th {
+	 font-family:verdana;
+	 font-size:11px;
+	 text-decoration: none;
+	 padding: 3px;
+}
+
+.weekday {
+	color: #804040;
+	font-family:verdana;
+	font-size:11px;
+}
+.weekday-active {
+	color: #804040;
+	font-family:verdana;
+	font-size:11px;
+}
+.day-active {
+	color: #804040;
+	font-family:verdana;
+	font-size:11px;
+}
+.day-active a,
+.weekday-active a,
+.day-active-v a,
+.weekday-active-v a
+ {
+text-decoration: underline;
+}
+
+.monthlink {
+	color: #4974a3;
+	font-family:tahoma;
+	font-size:11px;
+	text-decoration: none;
+}
+.day-current {
+	background:#F9F9F9;
+	border:1px solid #E6E6E6;
+}
+/* ==================== Рейтинг статьи */
+
+.rating {
+	color: #555555;
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	width: 85px;
+	height: 16px;
+}
+.unit-rating {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 85px;
+	height: 16px;
+	position: relative;
+	background-image: url(../dleimages/rating.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+.unit-rating li {
+	text-indent: -90000px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}
+.unit-rating li a {
+	display: block;
+	width: 17px;
+	height: 16px;
+	text-decoration: none;
+	text-indent: -9000px;
+	z-index: 17;
+	position: absolute;
+	padding: 0px;
+}
+.unit-rating li a:hover {
+	background-image: url(../dleimages/rating.png);
+	background-position: left center;
+	z-index: 2;
+	left: 0px;
+	margin-top: 0px;
+	
+}
+.unit-rating a.r1-unit { left: 0px; }
+.unit-rating a.r1-unit:hover { width: 17px;}
+.unit-rating a.r2-unit { left: 17px; }
+.unit-rating a.r2-unit:hover { width: 34px; }
+.unit-rating a.r3-unit { left: 34px; }
+.unit-rating a.r3-unit:hover { width: 51px; }
+.unit-rating a.r4-unit { left: 51px; }	
+.unit-rating a.r4-unit:hover { width: 68px; }
+.unit-rating a.r5-unit { left: 68px; }
+.unit-rating a.r5-unit:hover { width: 85px; }
+.unit-rating li.current-rating {
+	background-image: url('../dleimages/rating.png');
+	background-position: left bottom;
+	left: 0;
+	position: absolute;
+	height: 16px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+	margin-top: 1px;
+}
+/* 
+ * ========================================
+ * BB коды
+ * ========================================
+ */ 
+.bbcodes {
+	background: #FFF;
+	border: 1px solid #E0E0E0;
+	color: #666666;
+	font-family: Verdana, Tahoma, helvetica, sans-serif;
+	padding: 2px;
+	vertical-align: middle;
+	font-size: 10px; 
+	vertical-align: middle;
+	margin:2px;
+	height: 21px;
+}
+.editor textarea {
+	font-size: 11px;		/* ! */
+	font-family: tahoma;	/* ! */
+	background-color: #ffffff;
+
+}
+.editor_button {
+	float:left;
+	cursor:pointer;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+.editor_buttoncl {
+	float:left;
+	cursor:pointer;
+	padding-left: 1px;
+	padding-right: 1px;
+	border-left: 1px solid #BBB;
+	border-right: 1px solid #BBB;
+}
+.editbclose {
+	float:right;
+	cursor:pointer;
+}
+.editor_button select {
+	font-family: tahoma;
+	font-size: 11px;
+}
+.editor_button img {margin: 0; padding: 0;}
+.editbclose img {margin: 0; padding: 0;}
+.editor_button_brk img {margin: 0; padding: 0;}
+
+/* ==================== массовые действия для комментариев */
+
+.mass_comments_action  {
+	text-align: right;
+	padding-bottom: 5px;
+
+}
+
+/* 
+ * ========================================
+ * Дополнительные поля новостей
+ * ========================================
+ */ 
+.xfields {
+	padding-top: 5px;
+}
+
+.xfields textarea {
+	width:98%; 
+	height:150px; 
+	font-family:verdana; font-size:11px; border:1px solid #E0E0E0;
+	margin: 0px 1px 0px 0px;
+	padding: 0px;
+}
+.xfields input {
+width:250px; height:18px; font-family:verdana; font-size:11px; border:1px solid #E0E0E0;
+}
+.xfields select {
+height:18px; font-family:verdana; font-size:11px; border:1px solid #E0E0E0;
+}
+
+/* 
+ * ========================================
+ * Дополнительные поля профиля пользователей
+ * ========================================
+ */ 
+
+.xprofile textarea {
+width:499px; height:90px; font-family:verdana; font-size:11px; border:1px solid #E0E0E0;
+}
+.xprofile input {
+width:250px; height:18px; font-family:verdana; font-size:11px; border:1px solid #E0E0E0;
+}
+
+
+/* 
+ * ========================================
+ * Персональные сообщения
+ * ========================================
+ */ 
+
+.pm_head {
+	FONT: 10pt Verdana; 
+}
+.pm_list {
+	color: #888888;
+	font-size: 11px;
+	font-family: tahoma;
+	}
+.pm_list a {
+	color: #4b719e;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+/* 
+ * ========================================
+ * Выпадающее меню
+ * ========================================
+ */ 
+
+#dropmenudiv {
+	border: 1px solid #ffffff;
+	border-bottom-width: 0;
+	font: normal 10px Verdana;
+	background-color: #6497ca;
+	line-height: 20px;
+	margin: 2px;
+}
+
+#dropmenudiv a {
+	display: block;
+	text-indent: 3px;
+	text-decoration:none;
+	color: #ffffff;
+	background:#6497ca;
+	border: 1px solid #ffffff;
+	padding: 1px 0;
+	margin: 1px;
+	font-weight: bold;
+}
+
+#dropmenudiv a:hover {
+	background:#fdd08b;
+	color:#000000;
+}
+
+/* 
+ * ========================================
+ * Опрос
+ * ========================================
+ */
+
+.vote  {
+	color: #717171;
+	font-size: 11px;
+	font-family: tahoma;
+}
+
+/* 
+ * ========================================
+ * Ссылка на скачивание прикрепленного файла
+ * ========================================
+ */
+.attachment {
+	color: gray;
+	}
+
+/* 
+ * ========================================
+ * Поиск по сайту и результаты поиска
+ * ========================================
+ */
+
+.search {
+	font-family: Verdana;font-size: 11px;
+	color:#53646F;
+	text-decoration: none;
+	padding:2px;
+	}
+
+.textin {
+	font-family: Verdana;font-size: 11px;
+	color:#00002C;
+	text-decoration: none;
+	}
+
+.sresult  {
+	text-align: justify;
+	font-family:verdana;
+    FONT-WEIGHT: normal;
+    LINE-HEIGHT: 16px;
+	font-size:12px;
+	color:#606D77;
+}
+
+/* ==================== показ оригинальной картинки загруженной на сайт из уменьшенной копии */
+.highslide-wrapper, .highslide-outline {
+	background: #FFFFFF;
+}
+.highslide-image {
+	border: 2px solid #FFFFFF;
+}
+.highslide-active-anchor img {
+	visibility: hidden;
+}
+.highslide-dimming {
+	background: black;
+}
+.highslide-html {
+	background-color: white;
+}
+.highslide-loading {
+    display: block;
+	color: white;
+	font-size: 9px;
+	font-weight: bold;
+    text-decoration: none;
+	padding: 3px;
+	border: 1px solid white;
+    background-color: black;
+}
+a.highslide-full-expand {
+	background: url(../dleimages/fullexpand.gif) no-repeat;
+	display: block;
+	margin: 0 10px 10px 0;
+	width: 34px;
+	height: 34px;
+}
+.highslide-display-none {
+    display: none;
+}
+
+.highslide-caption {
+	display: none;
+	padding: 5px;
+	background: white;
+}
+
+.highslide-controls {
+    width: 195px;
+    height: 40px;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) 0 -90px no-repeat;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.highslide-controls ul {
+	position: relative;
+	left: 15px;
+    height: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif) right -90px no-repeat;
+}
+.highslide-controls li {
+    float: left;
+    padding: 5px 0;
+}
+.highslide-controls a {
+    background: url(../../../engine/classes/highslide/graphics/controlbar-black-border.gif);
+    display: block;
+    float: left;
+    height: 30px;
+    width: 30px;
+    outline: none;
+}
+.highslide-controls a.disabled {
+    cursor: default;
+}
+.highslide-controls a span {
+    /* hide the text for these graphic buttons */
+    display: none;
+}
+ 
+/* The CSS sprites for the controlbar */
+.highslide-controls .highslide-previous a {
+    background-position: 0 0;
+}
+.highslide-controls .highslide-previous a:hover {
+    background-position: 0 -30px;
+}
+.highslide-controls .highslide-previous a.disabled {
+    background-position: 0 -60px !important;
+}
+.highslide-controls .highslide-play a {
+    background-position: -30px 0;
+}
+.highslide-controls .highslide-play a:hover {
+    background-position: -30px -30px;
+}
+.highslide-controls .highslide-play a.disabled {
+	background-position: -30px -60px !important;
+}
+.highslide-controls .highslide-pause a {
+    background-position: -60px 0;
+}
+.highslide-controls .highslide-pause a:hover {
+    background-position: -60px -30px;
+}
+.highslide-controls .highslide-next a {
+    background-position: -90px 0;
+}
+.highslide-controls .highslide-next a:hover {
+    background-position: -90px -30px;
+}
+.highslide-controls .highslide-next a.disabled {
+    background-position: -90px -60px !important;
+}
+.highslide-controls .highslide-move a {
+    background-position: -120px 0;
+}
+.highslide-controls .highslide-move a:hover {
+    background-position: -120px -30px;
+}
+.highslide-controls .highslide-full-expand a {
+    background-position: -150px 0;
+}
+.highslide-controls .highslide-full-expand a:hover {
+    background-position: -150px -30px;
+}
+.highslide-controls .highslide-full-expand a.disabled {
+    background-position: -150px -60px !important;
+}
+.highslide-controls .highslide-close a {
+    background-position: -180px 0;
+}
+.highslide-controls .highslide-close a:hover {
+    background-position: -180px -30px;
+}
+
+/* Вид изображения: с прямыми краями и тенью */
+.wide-border {
+	background: white;
+}
+.wide-border .highslide-image {
+	border-width: 10px;
+}
+.wide-border .highslide-caption {
+	padding: 0 10px 10px 10px;
+}
+
+/* Вид изображения: только тень */
+.borderless .highslide-image {
+	border: none;
+}
+.borderless .highslide-caption {
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	background: white;
+}
+
+/* Вид изображения: только рамка без тени */
+.less .highslide-image {
+	border: 1px solid #000000;
+}
+.less .highslide-caption {
+	border: 1px solid #000000;
+	background: white;
+}
+
+/* ==================== Облако тегов */
+.clouds_xsmall {
+	font-size: x-small;
+}
+.clouds_small {
+	font-size: small;
+}
+.clouds_medium {
+	font-size: medium;
+}
+.clouds_large {
+	font-size: large;
+}
+.clouds_xlarge {
+	font-size: x-large;
+}
+
+/* ==================== Автозаполнение облака тегов */
+.autocomplete-w1 { position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { font-size: 11px;font-family: verdana;padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }
+
+/* ==================== Быстрый поиск на сайте */
+#searchsuggestions { border-width:1px; border-color:#919191; border-style:solid; width:300px; background-color:#5c9ccc; font-size:10px; line-height:14px; }
+#searchsuggestions a { padding:5px;display:block; background-color:#ffffff; clear:left; height:70px; text-decoration:none; }
+#searchsuggestions a:hover { background-color:#fdd08b; color:#ffffff; }
+#searchsuggestions a span.searchheading { background: #5c9ccc; display:block; font-weight:bold; padding:5px; color:#ffffff; }
+#searchsuggestions a:hover span.searchheading { color:#ffffff; }
+#searchsuggestions a span {color:#555555; }
+#searchsuggestions a:hover span { color:#0000; }
+#searchsuggestions span.seperator { float:right; padding-right:15px; margin-right:5px;}
+#searchsuggestions span.seperator a { background-color:transparent; display:block; height:auto; color:#ffffff; }
+#searchsuggestions span.notfound {  padding:5px;background-color:#ffffff; display:block; height:auto; color:#00000; }
+/* ==================== Диалоговые и всплывающие окна jQuery UI */
+.ui-helper-clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.ui-helper-clearfix {
+	display: inline-block;
+}
+* html .ui-helper-clearfix {
+	height: 1%;
+}
+.ui-helper-clearfix {
+	display: block;
+}
+.ui-icon {
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+.ui-widget {
+	font-family: Tahoma, Lucida Sans, Arial, sans-serif;
+	font-size: 11px;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-family: tahoma, Arial, sans-serif;
+	font-size: 11px;
+}
+.ui-widget-content {
+	background: #fcfdfd 50% bottom repeat-x;
+	border: 1px solid #a6c9e2;
+	color: #222222;
+}
+.ui-widget-content a {
+	color: #222222;
+}
+.ui-widget-header {
+	background: #5c9ccc url(../images/ui-bg_gloss-wave.png) 50% 50% repeat-x;
+	border: 1px solid #4297d7;
+	color: #ffffff;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #ffffff;
+}
+.ui-state-default, .ui-widget-content .ui-state-default {
+	background: #dfeffc url(../images/ui-bg_glass_85.png) 50% 50% repeat-x;
+	border: 1px solid #c5dbec;
+	color: #2e6e9e;
+	font-weight: bold;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+	color: #2e6e9e;
+	text-decoration: none;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+	background: #d0e5f5 url(../images/ui-bg_glass_75.png) 50% 50% repeat-x;
+	border: 1px solid #79b7e7;
+	color: #1d5987;
+	font-weight: bold;
+}
+.ui-state-hover a, .ui-state-hover a:hover {
+	color: #1d5987;
+	text-decoration: none;
+}
+.ui-state-active, .ui-widget-content .ui-state-active {
+	background: #f5f8f9 50% 50% repeat-x;
+	border: 1px solid #79b7e7;
+	color: #e17009;
+	font-weight: bold;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	color: #e17009;
+	text-decoration: none;
+}
+.ui-widget :active {
+	outline: none;
+}
+.ui-state-error {
+	background: #fef1ec 50% 50% repeat-x;
+	border: 1px solid #cd0a0a;
+	color: #cd0a0a;
+}
+.ui-widget-header .ui-icon {
+	background-image: url(../images/ui-icons.png);
+}
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
+	background-image: url(../images/ui-icons_h.png);
+}
+.ui-icon-close {
+	background-position: -80px -128px;
+}
+.ui-icon-closethick {
+	background-position: -96px -128px;
+}
+.ui-button .ui-button-text {
+	display: block;
+	line-height: 1.4;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em .8em;
+}
+input.ui-button {
+	padding: .4em 1em;
+}
+.ui-button-set {
+	margin-right: 7px;
+}
+.ui-button-set .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-dialog {
+	overflow: hidden;
+	padding: .2em;
+	position: absolute;
+	width: 300px;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .5em 1em .3em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 16px .2em 0;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	height: 18px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 19px;
+}
+.ui-dialog .ui-dialog-titlebar-close span {
+	display: block;
+	margin: 1px;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus {
+	padding: 0;
+}
+.ui-dialog .ui-dialog-content {
+	background: none;
+	border: 0;
+	overflow: hidden;
+	padding: .5em 1em;
+	position: relative;
+	zoom: 1;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	background-image: none;
+	border-width: 1px 0 0 0;
+	margin: .5em 0 0 0;
+	padding: .3em 1em .5em .4em;
+	text-align: left;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	cursor: pointer;
+	float: right;
+	line-height: 1.4em;
+	margin: .5em .4em .5em 0;
+	overflow: visible;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+}
+.ui-dialog .ui-resizable-se {
+	bottom: 3px;
+	height: 14px;
+	right: 3px;
+	width: 14px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
